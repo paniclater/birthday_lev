@@ -1,0 +1,2 @@
+class LevAdmirer < ApplicationRecord
+end
