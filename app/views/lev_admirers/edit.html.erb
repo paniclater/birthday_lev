@@ -1,0 +1,13 @@
+<h1>Announcing Lev's Birthday Party</h1>
+<p>December 10, 2022</p>
+<p>4 - 6pm</p>
+<p>Your presence is present enough!</p>
+<%= form_with model: @lev_admirer do |form| %>
+<div>
+    <%= form.check_box :is_coming %>
+    <%= form.label :is_coming, "Select the checkbox and click submit to RSVP!" %>
+</div>
+<div>
+    <%= form.submit %>
+</div>
+<% end %>
