@@ -1,0 +1,8 @@
+<h1>Lev Admirers</h1>
+<ul>
+    <% @lev_admirers.each do |lev_admirer|%>
+        <li>
+            <%= lev_admirer.first_name %> <%= lev_admirer.last_name %>  is <% if !lev_admirer.is_coming %> not <% end %> coming
+        </li>
+    <% end %>
+</ul>
